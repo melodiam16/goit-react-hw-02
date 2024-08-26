@@ -18,10 +18,7 @@ function App() {
   }, [feedback]);
 
   const updateFeedback = (feedbackType) => {
-    setFeedback((prevFeedback) => ({
-      ...prevFeedback,
-      [feedbackType]: prevFeedback[feedbackType] + 1,
-    }));
+    setFeedback({ ...feedback, [feedbackType]: feedback[feedbackType] + 1 });
   };
 
   const resetClicks = () => {
