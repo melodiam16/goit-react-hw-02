@@ -1,18 +1,13 @@
 export default function Feedback({
-  feedback: { good, neutral, bad },
-  totalFeedback,
+  feedback: { good, neutral, bad, total, positive },
 }) {
   return (
-    <>
-      {totalFeedback === 0 ? (
-        <p>No feedback yet</p>
-      ) : (
-        <>
-          <p>Good: {good}</p>
-          <p>Neutral: {neutral}</p>
-          <p>Bad: {bad}</p>
-        </>
-      )}
-    </>
+    <div>
+      <p>Good: {good}</p>
+      <p>Neutral: {neutral}</p>
+      <p>Bad: {bad}</p>
+      <p>Total: {total}</p>
+      <p>Positive: {positive}%</p>
+    </div>
   );
 }
