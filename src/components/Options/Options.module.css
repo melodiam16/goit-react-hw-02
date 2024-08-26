@@ -1,0 +1,10 @@
+.buttonsBox {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.optionsBtn {
+  background-color: aqua;
+  border-radius: 15px;
+}
