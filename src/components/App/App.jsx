@@ -25,7 +25,7 @@ function App() {
   };
 
   const resetClicks = () => {
-    setFeedback({ good: 0, neutral: 0, bad: 0, total: 0, positive: 0 });
+    setFeedback({ good: 0, neutral: 0, bad: 0 });
   };
 
   const totalFeedback = feedback.good + feedback.neutral + feedback.bad;
